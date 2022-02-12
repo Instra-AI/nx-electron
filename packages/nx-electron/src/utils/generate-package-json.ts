@@ -1,6 +1,5 @@
-import { ProjectGraph } from '@nrwl/devkit';
+import { ProjectGraph, writeJsonFile, readJsonFile } from '@nrwl/devkit';
 import { BuildElectronBuilderOptions } from '../executors/build/executor';
-import { writeJsonFile, readJsonFile } from '@nrwl/workspace/src/utilities/fileutils';
 import { INDEX_OUTPUT_FILENAME } from './config';
 
 /**
