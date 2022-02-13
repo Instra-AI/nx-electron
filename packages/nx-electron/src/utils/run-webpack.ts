@@ -23,7 +23,7 @@ export function runWebpack(config: webpack.Configuration): Observable<any> {
     } else {
       webpackCompiler.run((err, stats) => {
         callback(err, stats);
-
+        
         webpackCompiler.close((closeErr) => {
           if (closeErr) subscriber.error(closeErr);
           subscriber.complete();

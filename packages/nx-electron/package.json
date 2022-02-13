@@ -1,8 +1,8 @@
 {
-  "name": "nx-electron",
+  "name": "@kennybll/nx-electron",
   "version": "12.0.0",
   "main": "src/index.js",
-  "description": "Electron Plugin for Nx",
+  "description": "Electron Plugin for Nx; Hotfix for v13",
   "author": "Benny Megidish",
   "license": "Apache-2.0",
   "generators": "./generators.json",
@@ -47,7 +47,8 @@
   ],
   "peerDependencies": {
     "@nrwl/workspace": "*",
-    "electron": "*"
+    "electron": "*",
+    "electron-builder": "*"
   },
   "dependencies": {
     "circular-dependency-plugin": "^5.2.2",
@@ -64,7 +65,7 @@
     "tree-kill": "^1.2.2",
     "ts-loader": "^9.2.6",
     "tsconfig-paths-webpack-plugin": "^3.5.2",
-    "webpack": "^5.65.0",
+    "webpack": "^5.68.0",
     "webpack-dev-server": "^4.7.4",
     "webpack-merge": "^5.8.0"
   },
